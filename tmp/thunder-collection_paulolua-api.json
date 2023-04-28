@@ -1,0 +1,42 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "paulolua-api",
+    "dateExported": "2023-04-28T04:14:05.788Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "bd30d802-bf11-4d38-ad0c-af445a9e7619",
+            "colId": "71b3d368-0e63-47ab-a920-8f83b63d337a",
+            "containerId": "",
+            "name": "getImage",
+            "url": "localhost:8080/image",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-27T17:20:23.861Z",
+            "modified": "2023-04-28T04:11:24.054Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c10ba6b7-df54-49b3-a8ba-c72704c6cb9c",
+            "colId": "71b3d368-0e63-47ab-a920-8f83b63d337a",
+            "containerId": "",
+            "name": "postImage",
+            "url": "localhost:8080/image",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-04-28T04:03:29.721Z",
+            "modified": "2023-04-28T04:12:14.581Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"url\": \"here\",\n  \"label\": \"label\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
