@@ -2,25 +2,3 @@ Criar outros controladores
     Delete e update
 
 Uso em nuvem?
-
-Não se assuste com o monte de arquivos nisso aqui, é tudo gerado automaticamente pelo Springboot. Eu só mexo na pasta src. 
-Entra em src/main/java/com/paulolua/pauloluaapi. Tudo que importa ta lá dentro.
-
-O que significa o que tem aí dentro?
-
-PauloluaApiApplication.java → Essa é a classe principal, a que chama todas as outras, não se altera nada lá, mas é ela que você vai rodar pra iniciar o programa, quando a sua máquina estiver configurada.
-models/Image → É o que cria a classe da imagem, ou seja, define os dados que a imagem tem, como a url, legenda, etc. também define os métodos, que são funções que essa classe executa, como pegar ou definir um dado específico dessa classe.
-repositories/ImageRepository → Cria um repositório de imagens, o que é baiscamente receber as informações do banco de dados e botar elas no Java.
-controllers/ImageController → Cria um controlador para essa imagem, define o que dá pra fazer com ela e como isso vai ser feito.
-
-Ainda tem um arquivo útil fora desse caminho aí.
-Vai em src/main/java/com/paulolua/resources
-
-application.properties → dentro disso aí tem a string de conexão do banco de dados. aí no meio tem o nome do banco, nome do cluster (tipo um projeto, um grupo de bancos de dados), nome do usuário e senha do usuário.
-
-Enfim, o que é usado nisso aqui?
-
-Java 17 → precisa de java pra rodar java
-Apache Maven → serve pra hospedar o serviço em um host local, quase um servidor (lembra o apache, que hospeda servidores de vdd)
-Spring boot → é um framework. não é baixado no pc, só cria uma pasta zip q vc baixa e te dá os diretórios prontos pra usar.
-MongoDB Atlas → banco de dados hospedado na internet, sem baixar no pc
