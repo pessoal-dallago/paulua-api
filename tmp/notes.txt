@@ -1,10 +1,14 @@
+========== to do ==============================================
+
 Criar outros controladores
     Delete e update
 
 Uso em nuvem?
 
+========== Tutorial ==========================================
+
 Não se assuste com o monte de arquivos nisso aqui, é tudo gerado automaticamente pelo Springboot. Eu só mexo na pasta src. 
-Entra em src/main/java/com/paulolua/pauloluaapi. Tudo que importa ta lá dentro.
+Entra em src/main/java/com/paulolua/pauloluaapi. Tudo que importa ta lá dentro. Sim, são várias pastas vazias uma dentro da outra, no vscode elas já vão aparecer como uma só.
 
 O que significa o que tem aí dentro?
 
@@ -16,7 +20,7 @@ controllers/ImageController → Cria um controlador para essa imagem, define o q
 Ainda tem um arquivo útil fora desse caminho aí.
 Vai em src/main/java/com/paulolua/resources
 
-application.properties → dentro disso aí tem a string de conexão do banco de dados. aí no meio tem o nome do banco, nome do cluster (tipo um projeto, um grupo de bancos de dados), nome do usuário e senha do usuário.
+application.properties → dentro disso aí tem a string de conexão do banco de dados, aí no meio tem o nome do banco e senha do usuário.
 
 Enfim, o que é usado nisso aqui?
 
@@ -24,3 +28,5 @@ Java 17 → precisa de java pra rodar java
 Apache Maven → serve pra hospedar o serviço em um host local, quase um servidor (lembra o apache, que hospeda servidores de vdd)
 Spring boot → é um framework. não é baixado no pc, só cria uma pasta zip q vc baixa e te dá os diretórios prontos pra usar.
 MongoDB Atlas → banco de dados hospedado na internet, sem baixar no pc
+
+Agora dá uma olhada nos arquivos que eu mencionei. começa pelo model (src/main/java/com/paulolua/pauloluaapi/models/Image.java)

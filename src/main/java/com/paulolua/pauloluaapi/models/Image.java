@@ -11,10 +11,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection="images")
 //aqui de fato é criada a classe Image
 //public significa que pode ser acessada por todas as outras classes do projeto
+//o nome da classe sempre tem que ser igual ao nome do arquivo
 public class Image {
 
     //aqui cria as variáveis que vão criar um objeto imagem
     @Id
+    //aqui private significa que essas variáveis só existem dentro dessa classe
     private String id;
     private String url;
     private String label;
@@ -42,3 +44,5 @@ public class Image {
         return label;
     }
 }
+
+//cabo. agr veja o controller
