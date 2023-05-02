@@ -15,17 +15,25 @@ import com.paulolua.pauloluaapi.repositories.ImageRepository;
 public class ImageController {
 
     @Autowired
-    private ImageRepository imageRepository;
+    private ImageService ImageService;
 
     @GetMapping("/image")
     public List<Image> getImage(){
-        List<Image> images = imageRepository.findAll();
         return images;
     }
 
     @PostMapping("/image")
     public Image postImage(@RequestBody Image image){
-        Image savedImage = imageRepository.save(image);
         return savedImage;
+    }
+
+    @DeleteMapping("/image/delete/{serial}")
+    public void deleteImage(@PathVariable Integer serial) {
+    	ImageService.deleteImage(serial);
+    }
+
+    @PutMapping("/image/update/{serial}")
+    public ResponseEntity<Object> updateImage(@PathVariable Integer serial, @RequestBody Image image) {
+        return imageService.updateImage(serial, image);
     }
 }
