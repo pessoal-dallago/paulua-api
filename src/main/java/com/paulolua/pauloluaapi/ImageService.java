@@ -24,12 +24,12 @@ public class ImageService {
     public ResponseEntity<Object> updateImage(Integer serial, Image image) {
         Optional<Image> imageOptional = imageRepository.findById(serial);
 
-        Animals existingAnimals = animalOptional.get();
-        existingAnimals.setName(animal.getName());
-        existingAnimals.setSpecies(animal.getSpecies());
-        existingAnimals.setRace(animal.getRace());
+        Image existingImages = imageOptional.get();
+        existingImages.setUrl(image.getUrl());
+        existingImages.setLabel(image.getLabel());
+        existingImages.setSerial(image.getSerial());
         
-        Animals updateAnimals = animalsRepository.save(existingAnimals);
-        return ResponseEntity.status(HttpStatus.OK).body(updateAnimals);
+        Image updateImages = imageRepository.save(existingImages);
+        return ResponseEntity.status(HttpStatus.OK).body(updateImages);
     }
 }
