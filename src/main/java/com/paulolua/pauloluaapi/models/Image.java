@@ -10,16 +10,18 @@ public class Image {
     private String id;
     private String url;
     private String label;
-
+    private Integer serial;
+    
     public Image() {
         // ???
     }
 
-    public Image(String id, String url, String label){
+    public Image(String id, String url, String label, Integer serial){
 
         this.id=id;
         this.url=url;
         this.label=label;
+        this.serial=serial;
     }
 
     public String getId(){
@@ -31,4 +33,17 @@ public class Image {
     public String getLabel(){
         return label;
     }
+    public Integer getSerial(){
+        return serial;
+    }
+
+    public void setUrl(String url) {
+		this.url = url;
+	}
+    public void setLabel(String label) {
+		this.label = label;
+	}
+    public void setSerial(Integer serial) {
+        this.serial=serial;
+	}
 }
