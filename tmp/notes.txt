@@ -2,3 +2,7 @@ Criar outros controladores
     Delete e update
 
 Uso em nuvem?
+Não permitir dois serial iguais
+Retornar objeto deletado
+Deletar todos
+Mensagens de status

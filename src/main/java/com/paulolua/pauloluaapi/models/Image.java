@@ -38,10 +38,10 @@ public class Image {
     }
 
     public void setUrl(String url) {
-		this.url = url;
+		this.url=url;
 	}
     public void setLabel(String label) {
-		this.label = label;
+		this.label=label;
 	}
     public void setSerial(Integer serial) {
         this.serial=serial;
